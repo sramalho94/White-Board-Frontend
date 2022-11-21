@@ -1,4 +1,4 @@
-import './App.css'
+// import './App.css'
 import NavBar from './components/NavBar'
 import Home from './pages/Home'
 import Courses from './pages/Courses'
@@ -11,6 +11,7 @@ import { CheckSession } from './services/Auth'
 
 function App() {
   const [user, setUser] = useState()
+  const [authenticated, toggleAuthenticated] = useState(false)
 
   const checkToken = async () => {
     const user = await CheckSession()
@@ -32,15 +33,19 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar handleLogout={handleLogout} />
+      <NavBar
+        handleLogout={handleLogout}
+        authenticated={authenticated}
+        user={user}
+      />
       <main>
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/students" element={<Students />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-        </Routes>
+        </Routes> */}
       </main>
     </div>
   )
