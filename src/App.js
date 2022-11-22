@@ -8,6 +8,7 @@ import Register from './pages/Register'
 import { Routes, Route } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { CheckSession } from './services/Auth'
+import Course from './components/Course'
 
 function App() {
   const [user, setUser] = useState()
@@ -40,9 +41,9 @@ function App() {
       />
       <main>
         <Routes>
-          {/* <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/students" element={<Students />} /> */}
+          {/* <Route path="/students" element={<Students />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
         </Routes>

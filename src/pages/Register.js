@@ -28,7 +28,8 @@ const Register = () => {
       password: '',
       confirmPassword: ''
     })
-    navigate('/signin')
+    console.log('registered')
+    // navigate('/')
   }
 
   return (
@@ -53,7 +54,7 @@ const Register = () => {
               className="email"
               onChange={handleChange}
               name="email"
-              type="email"
+              type="text"
               placeholder="Email"
               value={formValues.email}
               required
