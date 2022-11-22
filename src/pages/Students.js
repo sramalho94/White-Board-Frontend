@@ -13,7 +13,6 @@ const Students = () => {
         'http://localhost:3001/api/students/students'
       )
       setStudents(response.data)
-      // console.log(response.data)
     }
     getStudents()
   }, [])

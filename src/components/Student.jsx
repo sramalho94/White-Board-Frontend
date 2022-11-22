@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Student = ({name,courses}) => {
-  // console.log(courses)
   const convertGrade = (grade) => {
     let gradeVar
     switch (grade) {
@@ -26,13 +25,9 @@ const Student = ({name,courses}) => {
     let average=0
     
     for (let i=0; i < courses.length; i++){
-      // average += parseInt(courses[i].StudentCourses.grade)
-      average = Math.floor(average+ parseInt(courses[i].StudentCourses.grade))
-      // console.log(courses[i].StudentCourses.grade)
-      // console.log(courses.length)
+      average += parseInt(courses[i].StudentCourses.grade)
     }
-    average = average / courses.length
-    // console.log(`average is ${average}`)
+    average = Math.floor(average / courses.length)
     return average
   }
   return (
