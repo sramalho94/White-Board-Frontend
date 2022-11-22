@@ -16,8 +16,16 @@ const CourseDetails = () => {
 
   return (
     <div>
-      <h2>CourseDetails</h2>
-      <h3></h3>
+      <h2>Course Details</h2>
+      <h1>{course.name}</h1>
+      <h3>Students:</h3>
+      <div>
+        {course.students.map((student) => (
+          <h1 key={student.id}>
+            {student.name} {student.StudentCourses.grade}
+          </h1>
+        ))}
+      </div>
     </div>
   )
 }
