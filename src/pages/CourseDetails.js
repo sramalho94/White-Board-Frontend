@@ -14,6 +14,27 @@ const CourseDetails = () => {
     getCourse()
   }, [])
 
+  const convertGrade = (grade) => {
+    let gradeVar
+    switch (grade) {
+      case 1:
+        gradeVar = 'D'
+        break
+      case 2:
+        gradeVar = 'C'
+        break
+      case 3:
+        gradeVar = 'B'
+        break
+      case 4:
+        gradeVar = 'A'
+        break
+      default:
+        gradeVar = 'N/A'
+    }
+    return gradeVar
+  }
+
   return (
     <div>
       <h2>Course Details</h2>
@@ -21,9 +42,9 @@ const CourseDetails = () => {
       <h3>Students:</h3>
       <div>
         {course.students.map((student) => (
-          <h1 key={student.id}>
-            {student.name} {student.StudentCourses.grade}
-          </h1>
+          <div key={student.id}>
+            {student.name} {convertGrade(student.StudentCourses.grade)}
+          </div>
         ))}
       </div>
     </div>
