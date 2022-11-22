@@ -24,6 +24,11 @@ Group Hackathon
 
 ### **_Technologies Used_**
 
+React.js
+Css
+Postgres
+Sequelize.js
+
 ### **_Getting Started_**
 
 ### **Image Board**
@@ -39,9 +44,9 @@ Group Hackathon
 
 ### **_Future Updates_**
 
-- [ ]
-- [ ]
-- [ ]
+- [ Functional authentication for Signin and Logut feature]
+- [ GPA grading system fully functional ]
+- [ Ability to add students into more than one course ]
 
 ### **_Credits_**
 
