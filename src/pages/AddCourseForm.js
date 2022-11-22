@@ -22,6 +22,7 @@ const AddCourseForm = () => {
       }
     )
     console.log('created course')
+    navigate(`/`)
   }
   return (
     <div className="signin col">

@@ -43,7 +43,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/students" element={<Students />} /> */}
+          <Route path="/students" element={<Students />} />
           <Route
             path="/login"
             element={

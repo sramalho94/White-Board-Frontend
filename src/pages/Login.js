@@ -21,13 +21,13 @@ const Login = (props) => {
   }
 
   return (
-    <div>
+    <div className="col">
       <h1>Hello</h1>
       <p>
         Sign in to your WhiteBoard account or{' '}
         <Link to="/Register">create an account</Link>
       </p>
-      <form className="col" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <div className="input-wrapper">
           <input
             className="email"

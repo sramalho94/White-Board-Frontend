@@ -9,7 +9,7 @@ const CourseDetails = () => {
     const getCourse = async () => {
       const response = await axios.get(`http://localhost:3001/api/course/${id}`)
       setCourse(response.data)
-      console.log(response.data)
+      // console.log(response.data)
     }
     getCourse()
   }, [])
@@ -36,14 +36,15 @@ const CourseDetails = () => {
   }
 
   return (
-    <div>
+    <div className="course_details">
       <h2>Course Details</h2>
       <h1>{course?.name}</h1>
       <h3>Students:</h3>
       <div>
         {course?.students.map((student) => (
           <div key={student.id}>
-            {student.name} {convertGrade(student.StudentCourses.grade)}
+            Name: {student.name} Grade:{' '}
+            {convertGrade(student.StudentCourses.grade)}
           </div>
         ))}
       </div>

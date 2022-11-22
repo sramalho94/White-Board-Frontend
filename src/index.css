@@ -1,4 +1,4 @@
-.course-card{
+.course-card, .student-card{
   border: 6px solid #0e8c5e;
   border-radius: 15px;
   box-shadow:0 8px 14px 0 black;
@@ -9,15 +9,61 @@
   width: 350px;
   color: #fbfbf7;
   cursor: pointer;
+  font-family: 'Raleway';
+}
+
+.students-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 200px;
+
 }
 
 
-.course-card:hover {
+.course-card:hover, .student-card:hover {
   box-shadow: 0 10px 30px 0 black;
   color: black;
 }
 
 .nav{
   background-color: #0e8c5e;
-  font-family: ''
+  padding: 50px;
+  font-family: 'Raleway';
+  display: flex;
+  justify-content: space-between;
+  color: white;
 }
+
+.signin_col, .col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EFF4FD;
+  font-family: 'Raleway';
+  border-radius: 10px;
+  width: 1200px;
+  height: 100vh;
+}
+
+.course_details{
+  font-family: 'Raleway';
+  background-color: #EFF4FD;
+}
+
+.students-title{
+  font-family: 'Raleway';
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  margin: 50px;
+  padding: 50px;
+}
+
+/* .navlink:hover{
+  color: white;
+} */

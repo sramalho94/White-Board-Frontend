@@ -29,11 +29,11 @@ const Register = () => {
       confirmPassword: ''
     })
     console.log('registered')
-    // navigate('/')
+    navigate('/')
   }
 
   return (
-    <div className="signin col">
+    <div className="signin_col">
       <div className="card-overlay centered">
         <form className="col" onSubmit={handleSubmit}>
           <h1>Hello</h1>

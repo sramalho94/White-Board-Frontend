@@ -13,7 +13,6 @@ const Home = () => {
         'http://localhost:3001/api/course/courses/students'
       )
       setCourses(response.data)
-      console.log(response.data)
     }
     getCourses()
   }, [])
@@ -23,8 +22,12 @@ const Home = () => {
       <h1>Courses </h1>
       {courses?.map((course) => (
         <div key={course.id}>
-          <Course name={course.name} />
-          <Link to={`/course/details/${course.id}`}>{course.name} details</Link>
+          <div className="course-card">
+            <Course name={course.name} />
+            <Link to={`/course/details/${course.id}`}>
+              {course.name} details
+            </Link>
+          </div>
         </div>
       ))}
     </div>
