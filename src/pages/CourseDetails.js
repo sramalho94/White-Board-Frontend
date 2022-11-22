@@ -38,10 +38,10 @@ const CourseDetails = () => {
   return (
     <div>
       <h2>Course Details</h2>
-      <h1>{course.name}</h1>
+      <h1>{course?.name}</h1>
       <h3>Students:</h3>
       <div>
-        {course.students.map((student) => (
+        {course?.students.map((student) => (
           <div key={student.id}>
             {student.name} {convertGrade(student.StudentCourses.grade)}
           </div>

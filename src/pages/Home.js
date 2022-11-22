@@ -22,8 +22,8 @@ const Home = () => {
     <div>
       <h1>Courses </h1>
       {courses?.map((course) => (
-        <div>
-          <Course name={course.name} key={course.id} />
+        <div key={course.id}>
+          <Course name={course.name} />
           <Link to={`/course/details/${course.id}`}>{course.name} details</Link>
         </div>
       ))}

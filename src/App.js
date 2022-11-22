@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react'
 import { CheckSession } from './services/Auth'
 import Course from './components/Course'
 import CourseDetails from './pages/CourseDetails'
+import AddCourseForm from './pages/AddCourseForm'
 
 function App() {
   const [user, setUser] = useState()
@@ -54,6 +55,7 @@ function App() {
           />
           <Route path="/Register" element={<Register />} />
           <Route path="/course/details/:id" element={<CourseDetails />} />
+          <Route path="/addcourse" element={<AddCourseForm />} />
         </Routes>
       </main>
     </div>
