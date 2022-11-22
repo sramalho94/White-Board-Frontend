@@ -39,13 +39,13 @@ function App() {
         user={user}
       />
       <main>
-        {/* <Routes>
-          <Route path="/" element={<Home />} />
+        <Routes>
+          {/* <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/students" element={<Students />} />
+          <Route path="/students" element={<Students />} /> */}
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Routes> */}
+          <Route path="/Register" element={<Register />} />
+        </Routes>
       </main>
     </div>
   )
