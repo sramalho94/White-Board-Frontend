@@ -1,0 +1,23 @@
+.course-card{
+  border: 6px solid #0e8c5e;
+  border-radius: 15px;
+  box-shadow:0 8px 14px 0 black;
+  margin: 50px;
+  background-color:#0e8c5e;
+  text-align: center;
+  padding: 10px;
+  width: 350px;
+  color: #fbfbf7;
+  cursor: pointer;
+}
+
+
+.course-card:hover {
+  box-shadow: 0 10px 30px 0 black;
+  color: black;
+}
+
+.nav{
+  background-color: #0e8c5e;
+  font-family: ''
+}
