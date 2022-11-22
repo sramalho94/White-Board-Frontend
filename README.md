@@ -33,14 +33,11 @@ Sequelize.js
 
 ### **Image Board**
 
-<figcaption></figcaption>
-![https://imgur.com/LMR8czI.jpeg]
+![image](https://imgur.com/LMR8czI.jpeg)
 
-<figcaption></figcaption>
-![https://imgur.com/IEajh7w.jpeg]
+![image](https://imgur.com/IEajh7w.jpeg)
 
-<figcaption></figcaption>
-![https://imgur.com/VzGGmwR.jpeg]
+![image](https://imgur.com/VzGGmwR.jpeg)
 
 ### **_Future Updates_**
 
